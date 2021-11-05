@@ -89,7 +89,7 @@ These components that have state can receive data as props. This allows us to se
 
 1. Describe props.
 
-We pass data as props from one component (holding onto state) to another. Props are read only representation of data that helps ensure our data flow is clean and organized. This is important so that we can change components with different data. 
+We pass data as props from one component (holding onto state) to another. We see it as a variable passed from a parent component down to a child component. Props are read only representation of data that helps ensure our data flow is clean and organized. This is important so that we can change components with different data. 
 
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
