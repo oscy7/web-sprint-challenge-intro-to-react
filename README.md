@@ -79,6 +79,24 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+React JS is a UI component library developed by Facebook to solve complex problems dealing with user state. It renders UI, components and data. It is scalable and reusable which makes it so powerful in order to scale. 
+
 1. Describe component state.
+
+A stateful component is one that holds state data. It is either an object inside a constructor function or a function that uses .useState. 
+These components that have state can receive data as props. This allows us to send data down to child components.
+
 1. Describe props.
+
+We pass data as props from one component (holding onto state) to another. Props are read only representation of data that helps ensure our data flow is clean and organized. This is important so that we can change components with different data. 
+
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are anything that affects stuff outside the scope of a function. Examples include, fetching data from an API, timers, logging and other things. There are two categories of side effects: 
+-Those that require clean up 
+-Those that DO NOT require clean up
+
+Syncing is important because we run into the possiblity of entering in an infinite loop or a memory leak. We stop this from happening by placing an empty array at the end of our useEffect: '[]'
+ 
